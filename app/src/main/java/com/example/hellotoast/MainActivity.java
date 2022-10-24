@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        // Guardar la pregunta cuando se gira la pantalla
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putInt(KEY_CONTADOR, contador);
     }
