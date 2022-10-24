@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".HelloRelative">
 
     <Button
         android:id="@+id/ToastBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@color/yellow"
@@ -18,20 +17,23 @@
 
     <TextView
         android:id="@+id/contadorTexto"
-        android:layout_width="match_parent"
-        android:layout_height="433dp"
+        android:layout_width="154dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="-1dp"
+        android:layout_toEndOf="@+id/ToastBtn"
         android:background="@color/yellow"
         android:gravity="center"
         android:text="@string/contador"
         android:textColor="#6200EE"
-        android:textSize="200dp" />
+        android:textSize="100dp" />
 
     <Button
         android:id="@+id/Count"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ToastBtn"
+        android:layout_marginTop="0dp"
         android:layout_weight="1"
         android:background="@color/yellow"
         android:text="@string/btnContador" />
-
-</LinearLayout>
+</RelativeLayout>
