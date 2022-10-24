@@ -5,28 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ToastBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@color/yellow"
         android:text="@string/btnToast" />
 
     <TextView
+        android:id="@+id/contadorTexto"
         android:layout_width="match_parent"
         android:layout_height="603dp"
         android:text="@string/contador"
         android:gravity="center"
         android:background="@color/yellow"
-        android:textSize="50dp"/>
+        android:textColor="#6200EE"
+        android:textSize="200dp"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:background="@color/yellow"
         android:text="@string/btnContador" />
 
 </LinearLayout>
